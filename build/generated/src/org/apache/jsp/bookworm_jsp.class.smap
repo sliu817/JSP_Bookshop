@@ -1,0 +1,18 @@
+SMAP
+bookworm_jsp.java
+JSP
+*S JSP
+*F
++ 0 bookworm.jsp
+bookworm.jsp
+*L
+1,11:44
+12:55,3
+13,4:58
+17:62,3
+18,5:65
+23:70,3
+24,4:73
+28:77,3
+29,7:80
+*E

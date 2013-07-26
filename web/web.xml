@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">	
+		
+	<!--注册-->
+	<servlet>
+		<servlet-name>acceptUserRegist</servlet-name>
+		<servlet-class>common.acceptUserRegist</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>acceptUserRegist</servlet-name>
+		<url-pattern>/acceptUserRegist</url-pattern>
+	</servlet-mapping>
+	
+	<!--查询图书-->
+	<servlet>
+		<servlet-name>searchBook</servlet-name>
+		<servlet-class>common.searchBook</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>searchBook</servlet-name>
+		<url-pattern>/searchBook</url-pattern>
+	</servlet-mapping>
+        
+        <!--查询图书详细信息-->
+	<servlet>
+		<servlet-name>SearchBookDetail</servlet-name>
+		<servlet-class>common.SearchBookDetail</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchBookDetail</servlet-name>
+		<url-pattern>/SearchBookDetail</url-pattern>
+	</servlet-mapping>
+    
+    <!--登陆-->
+	<servlet>    	
+    	<servlet-name>acceptUserLogin</servlet-name>
+    	<servlet-class>common.acceptUserLogin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>acceptUserLogin</servlet-name>
+		<url-pattern>/acceptUserLogin</url-pattern>
+	</servlet-mapping>
+	
+	<!--退出登陆-->
+  	<servlet>
+    	<servlet-name>Logout</servlet-name>
+    	<servlet-class>common.Logout</servlet-class>
+  	</servlet>  
+  	<servlet-mapping>
+  	  	<servlet-name>Logout</servlet-name>
+    	<url-pattern>/Logout</url-pattern>
+	</servlet-mapping>
+	
+	<!--查询购物车-->
+	<servlet>
+    	<servlet-name>checkCart</servlet-name>
+    	<servlet-class>common.checkCart</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>checkCart</servlet-name>
+    	<url-pattern>/checkCart</url-pattern>
+  	</servlet-mapping>
+  	
+  	<!--添加图书-->
+  	<servlet>
+  	  	<servlet-name>addBook</servlet-name>
+  	  	<servlet-class>common.addBook</servlet-class>
+  	</servlet>  	
+  	<servlet-mapping>
+  	  	<servlet-name>addBook</servlet-name>
+  	  	<url-pattern>/addBook</url-pattern>
+  	</servlet-mapping>  	
+  	
+  	<!--删除图书-->
+  	<servlet>
+  	  	<servlet-name>removeBook</servlet-name>
+  	  	<servlet-class>common.removeBook</servlet-class>
+ 	</servlet>
+ 	<servlet-mapping>
+ 	   	<servlet-name>removeBook</servlet-name>
+ 	   	<url-pattern>/removeBook</url-pattern>
+ 	</servlet-mapping>
+ 	
+ 	<!--预览订单-->
+  	<servlet>
+    	<servlet-name>orderForm</servlet-name>
+    	<servlet-class>common.orderForm</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>orderForm</servlet-name>
+    	<url-pattern>/orderForm</url-pattern>
+  	</servlet-mapping>
+  	
+  	<!--生成订单-->
+  	<servlet>
+    	<servlet-name>makeOrder</servlet-name>
+    	<servlet-class>common.makeOrder</servlet-class>
+  	</servlet>  	
+  	<servlet-mapping>
+    	<servlet-name>makeOrder</servlet-name>
+    	<url-pattern>/makeOrder</url-pattern>
+ 	</servlet-mapping>
+ 	
+ 	<!--查看订单-->
+  	<servlet>
+    	<servlet-name>checkOrder</servlet-name>
+    	<servlet-class>common.checkOrder</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>checkOrder</servlet-name>
+    	<url-pattern>/checkOrder</url-pattern>
+  	</servlet-mapping>  	
+  	
+</web-app>
